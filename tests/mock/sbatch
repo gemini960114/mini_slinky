@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "SBATCHcalled env=[$SVC_START-$SVC_END]" >> "$MOCK_LOG"
+echo 999999

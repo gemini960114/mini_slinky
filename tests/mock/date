@@ -1,0 +1,6 @@
+#!/bin/bash
+# mock date：用 TEST_HM 控制 %H%M 輸出
+case "$*" in
+  *%H%M*) echo "${TEST_HM:-0700}" ;;
+  *)      echo "2026-10-03 ${TEST_TS:-07:00:00}" ;;
+esac
